@@ -4,6 +4,8 @@ body {
     margin: 5%;
     font-family: Constantia, "Times New Roman", Calibri;
     background-color: rgba(0, 0, 0, 0.73);
+    border-color: aqua;
+    border-style: double;
 }
 
 h1, h2 {
@@ -39,4 +41,8 @@ p.brief {
 
 .movie a {
     color: #b4524c;
+}
+
+article.fun h2::after {
+    content: " First Come ";
 }
