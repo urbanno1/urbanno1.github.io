@@ -1,0 +1,38 @@
+
+body {
+    margin: 0;
+    margin: 5%;
+    font-family: Constantia, "Times New Roman", Calibri;
+    background-color: rgba(0, 0, 0, 0.73);
+}
+
+h1, h2 {
+    color: #a2c4f6;
+
+}
+
+h1.about {
+    text-align: center;
+    font-size: 5vw;
+}
+
+p.explain {
+    color: white;
+    text-align: center;
+}
+
+p span.quality {
+    color: #e9e880;
+}
+
+ul {
+    color: white;
+}
+
+p.brief {
+    color: white;
+}
+
+.movie a {
+    color: #b4524c;
+}
