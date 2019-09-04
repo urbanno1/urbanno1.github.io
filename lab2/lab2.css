@@ -11,9 +11,13 @@ h1, h2 {
 
 }
 
-h1.about {
-    text-align: center;
+h1 .about {
+    margin-left: 15vw;
     font-size: 5vw;
+}
+h1 .home {
+    text-align: left;
+    cursor: pointer;
 }
 
 p.explain {
