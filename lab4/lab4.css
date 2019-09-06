@@ -22,8 +22,22 @@ textarea {
     margin-bottom: 5%;
     display:flex;
 }
+
+.left-column > span {
+    text-decoration: underline;
+    margin-bottom: 5%;
+    display: block;
+}
+
+.right-column > span {
+    text-decoration: underline;
+    margin-bottom: 5%;
+    display: block;
+}
+
+
 header {
-    margin: 20px 10% 5% 10%;
+    margin: 20px 10% 2% 10%;
     background-color: #a2c4f6;
     padding: 1px;
 }
@@ -34,7 +48,7 @@ nav ul >li {
 }
 
 section {
-     margin: 0% 10% 10% 10%;
+     margin: 0% 10% 5% 10%;
     border: 2px solid seagreen;
  }
 
@@ -42,11 +56,13 @@ section {
     display: flex;
     justify-content: center;
 
+
 }
 
 .flex-container > div {
     width: 45%;
-    margin: 5%;
+    margin: 1%;
+    flex-wrap: wrap;
 }
 
 .action-button {
@@ -65,9 +81,15 @@ label {
 }
 
 .form-label {
-    min-width: 170px;
+    min-width: 180px;
+    font-weight: bold;
 }
 
 .form-input {
     min-width: 300px;
+}
+
+.required::after {
+    content: "*";
+    color: red;
 }

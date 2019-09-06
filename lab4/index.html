@@ -23,8 +23,9 @@
             <div class="flex-container">
 
                 <div class="left-column">
+                    <span>Register now seats are available!</span>
                     <div>
-                        <div class="form-label">
+                        <div class="form-label required">
                             <label for="firstname">First Name: </label>
                         </div>
                         <div class="form-input">
@@ -33,7 +34,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="form-label">
+                        <div class="form-label required">
                             <label for="lastname">Last Name: </label>
                         </div>
 
@@ -43,7 +44,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="form-label">
+                        <div class="form-label required">
                             <label for="company">Company/Institution: </label>
                         </div>
 
@@ -54,7 +55,7 @@
                     </div>
 
                     <div>
-                        <div class="form-label">
+                        <div class="form-label required">
                             <label for="address">Address: </label>
                         </div>
 
@@ -70,7 +71,7 @@
                         </div>
                         <div class="form-input">
                             <input type="text" name="city" id="city" placeholder="fairfield"
-                                   pattern="[A-Za-z]{3}" required/>
+                                   pattern="[A-Za-z]{3}" />
                         </div>
 
                     </div>
@@ -106,7 +107,7 @@
                     </div>
 
                     <div>
-                        <div class="form-label">
+                        <div class="form-label required">
                             <label for="email">Email Address: </label>
                         </div>
                         <div class="form-input">
@@ -116,7 +117,7 @@
 
                     </div>
                     <div>
-                        <div class="form-label">
+                        <div class="form-label required">
                             <label for="phone">Phone Number: </label>
                         </div>
                         <div class="form-input">
@@ -127,16 +128,76 @@
 
                 </div>
                 <div class="right-column">
-                    <h6>Lunch</h6>
+                    <span>Lunch</span>
                     <div>
                         <div class="form-label">
                             <label for="code2">Meal Reference: </label>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="country_code" id="code2" placeholder="Enter country code: ABC"
+                            <input type="text" name="country_code" id="code2" placeholder="00011111"
                                    pattern="[A-Za-z]{3}" required/>
                         </div>
                     </div>
+
+                    <span>Payment Details</span>
+
+                    <div>
+                        <div class="form-label">
+                            <label>Payment Mode: </label>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="cash">
+                                    <input type="checkbox" name="cash" id="cash" value="Cash" /> Cash
+                                </label>
+                            </div>
+                            <div>
+                                <label for="cheque">
+                                    <input type="checkbox" name="cheque" id="cheque" value="Cheque" /> Cheque
+                                </label>
+                            </div>
+                            <div>
+                                <label for="draft">
+                                    <input type="checkbox" name="draft" id="draft" value="Demand draft" /> Demand draft
+                                </label>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div>
+                        <div class="form-label">
+                            <label for="chequeNo">DD/Cheque No: </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="chequeNo" id="chequeNo" placeholder="00233444"
+                                   pattern="[A-Za-z]{3}" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-label">
+                            <label for="bank">Drawn on(Bank Name): </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="bankname" id="bank" placeholder="FWC, Midwestone..."
+                                   pattern="[A-Za-z]{3}" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-label">
+                            <label for="payable">Payable at: </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="payable" id="payable" placeholder="fairfield, iowa city..."
+                                   pattern="[A-Za-z]{3}" required/>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
