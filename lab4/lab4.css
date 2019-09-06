@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, "Times New Roman", "Arial Black";
+}
+
+input[type=text], input[type=number], input[type=date], select {
+    width: 100%;
+    height: 25px!important;
+    /*float: right*/;
+}
+textarea {
+    width: 100%;
+}
+
+.right-column > div {
+    margin-bottom: 5%;
+    display:flex;
+}
+
+.left-column > div {
+    margin-bottom: 5%;
+    display:flex;
+}
+header {
+    margin: 20px 10% 5% 10%;
+    background-color: #a2c4f6;
+    padding: 1px;
+}
+
+nav ul >li {
+    display: inline;
+    margin-right: 10px;
+}
+
+section {
+     margin: 0% 10% 10% 10%;
+    border: 2px solid seagreen;
+ }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-container > div {
+    width: 45%;
+    margin: 5%;
+}
+
+.action-button {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 1%;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #a2c4f6;
+}
+
+label {
+    margin-right: 5px;
+    float: left;
+}
+
+.form-label {
+    min-width: 170px;
+}
+
+.form-input {
+    min-width: 300px;
+}
