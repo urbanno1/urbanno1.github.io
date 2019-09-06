@@ -7,14 +7,14 @@
 <body>
 
 <header>
-<nav>
-    <ul>
-        <li>Workshop Registration</li>
-        <li>More Actions</li>
-    </ul>
-<!--    <span>Workshop Registration</span>-->
+    <nav>
+        <ul>
+            <li>Workshop Registration</li>
+            <li>More Actions</li>
+        </ul>
+        <!--    <span>Workshop Registration</span>-->
 
-</nav>
+    </nav>
 </header>
 
 <section>
@@ -28,7 +28,8 @@
                             <label for="firstname">First Name: </label>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="country_code" id="firstname" placeholder="Enter 3 letters only eg.: ABC" pattern="[A-Za-z]{3}" required />
+                            <input type="text" name="firstname" id="firstname"
+                                   placeholder="Chinedu" pattern="[A-Za-z]{3, 20}" required/>
                         </div>
                     </div>
                     <div>
@@ -37,7 +38,8 @@
                         </div>
 
                         <div class="form-input">
-                            <input type="text" name="country_code" id="lastname" placeholder="Enter 3 letters only eg.: ABC" pattern="[A-Za-z]{3}" required />
+                            <input type="text" name="lastname" id="lastname"
+                                   placeholder="Ugwu" pattern="[A-Za-z]{3, 20}" required/>
                         </div>
                     </div>
                     <div>
@@ -46,7 +48,8 @@
                         </div>
 
                         <div class="form-input">
-                            <input type="text" name="country_code" id="company" placeholder="Enter 3 letters only eg.: ABC" pattern="[A-Za-z]{3}" required />
+                            <input type="text" name="company" id="company"
+                                   placeholder="Maharishi University of Management" pattern="[A-Za-z]{3, 200}" required/>
                         </div>
                     </div>
 
@@ -56,7 +59,8 @@
                         </div>
 
                         <div class="form-input">
-                            <textarea name="address" id="address" cols="4" rows="4" required></textarea>
+                            <textarea name="address" id="address" cols="4" rows="4"
+                                      placeholder="1000 North 4th Street, Fairfield" pattern="[A-Za-z]{3, 300}" required></textarea>
                         </div>
                     </div>
 
@@ -65,7 +69,8 @@
                             <label for="city">City: </label>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="city" id="city" placeholder="Enter 3 letters only eg.: ABC" pattern="[A-Za-z]{3}" required />
+                            <input type="text" name="city" id="city" placeholder="fairfield"
+                                   pattern="[A-Za-z]{3}" required/>
                         </div>
 
                     </div>
@@ -75,7 +80,8 @@
                             <label for="state">State/Province/Region: </label>
                         </div>
                         <div class="form-input">
-                            <select name="state" id="state" >
+                            <select name="state" id="state">
+                                <option>- Select -</option>
                                 <option>Iowa State</option>
                                 <option>New Jersey</option>
                                 <option>New York</option>
@@ -84,13 +90,28 @@
 
                     </div>
 
+                    <div>
+                        <div class="form-label">
+                            <label for="country">Country: </label>
+                        </div>
+                        <div class="form-input">
+                            <select name="state" id="country">
+                                <option>- Select -</option>
+                                <option>USA</option>
+                                <option>Nigeria</option>
+                                <option>Canada</option>
+                            </select>
+                        </div>
+
+                    </div>
 
                     <div>
                         <div class="form-label">
                             <label for="email">Email Address: </label>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="country_code" id="email" placeholder="Enter 3 letters only eg.: ABC" pattern="[A-Za-z]{3}" required />
+                            <input type="text" name="country_code" id="email"
+                                   placeholder="chinedu@mum.edu" pattern="[A-Za-z]{3}" required/>
                         </div>
 
                     </div>
@@ -99,18 +120,21 @@
                             <label for="phone">Phone Number: </label>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="country_code" id="phone" placeholder="Enter 3 letters only eg.: ABC" pattern="[A-Za-z]{3}" required />
+                            <input type="text" name="country_code" id="phone"
+                                   placeholder="+1(641)458 5111" pattern="[A-Za-z]{3}" required/>
                         </div>
                     </div>
 
                 </div>
                 <div class="right-column">
+                    <h6>Lunch</h6>
                     <div>
                         <div class="form-label">
-                            <label for="code2">Country Code: </label>
+                            <label for="code2">Meal Reference: </label>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="country_code" id="code2" placeholder="Enter country code: ABC" pattern="[A-Za-z]{3}" required />
+                            <input type="text" name="country_code" id="code2" placeholder="Enter country code: ABC"
+                                   pattern="[A-Za-z]{3}" required/>
                         </div>
                     </div>
                 </div>
