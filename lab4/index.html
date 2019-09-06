@@ -131,12 +131,27 @@
                     <span>Lunch</span>
                     <div>
                         <div class="form-label">
-                            <label for="code2">Meal Reference: </label>
+                            <label for="country">Meal Reference: </label>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="country_code" id="code2" placeholder="00011111"
-                                   pattern="[A-Za-z]{3}" required/>
+                            <select name="state" id="country">
+                                <option>- Select -</option>
+                                <option>USA</option>
+                                <option>Nigeria</option>
+                                <option>Canada</option>
+                            </select>
                         </div>
+
+
+
+
+<!--                        <div class="form-label">-->
+<!--                            <label for="code2">Meal Reference: </label>-->
+<!--                        </div>-->
+<!--                        <div class="form-input">-->
+<!--                            <input type="text" name="country_code" id="code2" placeholder="00011111"-->
+<!--                                   pattern="[A-Za-z]{3}" required/>-->
+<!--                        </div>-->
                     </div>
 
                     <span>Payment Details</span>
@@ -163,9 +178,6 @@
                             </div>
 
                         </div>
-
-
-
                     </div>
 
                     <div>
@@ -210,5 +222,6 @@
 
     </article>
 </section>
+
 </body>
 </html>
