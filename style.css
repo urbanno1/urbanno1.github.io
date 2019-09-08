@@ -1,0 +1,10 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(176, 236, 247, 0.67);
+}
+
+section {
+    margin: 5% 10%;
+    border: 5px dashed green;
+}

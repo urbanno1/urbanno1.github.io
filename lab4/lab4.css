@@ -97,3 +97,8 @@ label {
     color: red;
 }
 
+header > a {
+    float: left;
+    margin-right: 40px;
+}
+
