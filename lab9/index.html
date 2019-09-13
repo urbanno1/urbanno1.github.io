@@ -20,7 +20,7 @@
 
 <section>
     <article>
-        <form action="index.html" method="post" id="new_ticket">
+        <form action="index.html" method="post" >
 
             <div class="flex-container">
 
@@ -74,12 +74,12 @@
                     </div>
 
                     <div>
-                        <div class="form-label required">
+                        <div class="form-label">
                             <label for="seat">How many Seats?: </label>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="seat" id="seat"
-                                   placeholder="enter seat" pattern="[A-Za-z]{3, 200}" required/>
+                            <input type="number" name="seat" id="seat"
+                                   placeholder="enter seat" pattern="[1-9]" required/>
                         </div>
                     </div>
                     <fieldset>
@@ -129,7 +129,7 @@
                     </fieldset>
 
                     <div>
-                        <div class="form-label required">
+                        <div class="form-label ">
                             <label for="instruction">Special Instructions: </label>
                         </div>
 
@@ -145,7 +145,7 @@
 
             <div class="action-button">
                 <input type="reset" value="Reset">
-                <input type="submit" value="Submit Booking">
+                <input type="submit" id="new_ticket" value="Submit Booking">
             </div>
 
         </form>

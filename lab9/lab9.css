@@ -24,6 +24,16 @@ textarea {
     display:flex;
 }
 
+.left-column > div#error {
+    margin-bottom: 0%!important;
+    display:grid!important;
+}
+
+.left-column > div#error p {
+    margin-bottom: 0%!important;
+    margin-top: 0%!important;
+}
+
 .left-column > span {
     text-decoration: underline;
     margin-bottom: 5%;
