@@ -2,28 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lecture 6 - Javascript for modern web Applications</title>
-    <link rel="stylesheet" href="lab6.css" type="text/css">
-    <script src="lab6.js" type="text/javascript" rel="script"></script>
+    <title>Lecture 9 - JQuery</title>
+    <link rel="stylesheet" href="lab9.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="lab9.js" type="text/javascript" rel="script"></script>
+
 </head>
 <body>
 <header>
     <a class="home" href="../index.html" title="Go back to Home Page">
-    <img src="../home-Icon.png" alt="Home Page Icon" width="50" height="50">
+        <img src="../home-Icon.png" alt="Home Page Icon" width="50" height="50">
     </a>
 </header>
+
+
 <section>
     <article>
-        <span class="parent">Javascript for modern web Applications</span>
-        <h2>(Inspect the console to view the solutions)</h2>
+        <form action="index.html" method="post" id="new_ticket">
+
+            <div class="flex-container">
+
+                <div class="left-column">
+                    <div id="error">
+                    </div>
+
+                    <span>Ticket Booking</span>
+                    <div>
+                        <div class="form-label">
+                            <label for="name">Name: </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="name" id="name"
+                                   placeholder="enter name" pattern="[A-Za-z]{3, 20}" required/>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-label">
+                            <label for="street">Street: </label>
+                        </div>
+
+                        <div class="form-input">
+                            <input type="text" name="street" id="street"
+                                   placeholder="enter street" pattern="[A-Za-z]{3, 20}" required/>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-label">
+                            <label for="state">Staten: </label>
+                        </div>
+                        <div class="form-input">
+                            <select name="state" id="state">
+                                <option>- Select One -</option>
+                                <option>Iowa State</option>
+                                <option>New Jersey</option>
+                                <option>New York</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-label">
+                            <label for="zip">Zip Code: </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="zip" id="zip"
+                                   placeholder="zip code" pattern="[A-Za-z]{3, 200}" required/>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-label required">
+                            <label for="seat">How many Seats?: </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="seat" id="seat"
+                                   placeholder="enter seat" pattern="[A-Za-z]{3, 200}" required/>
+                        </div>
+                    </div>
+                    <fieldset>
+                        <legend>Which Taxi do you require?</legend>
+                        <div>
+                            <div>
+                                <label for="taxi">
+                                    <input type="radio" name="taxi" id="taxi" value="Car"/> Car
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="taxi2">
+                                    <input type="radio" name="taxi" id="taxi2" value="Van"/> Van
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="taxi">
+                                    <input type="radio" name="taxi" id="taxi3" value="Tuk Tuk"/> Tuk Tuk
+                                </label>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Extras</legend>
+                        <div>
+                            <div>
+                                <label for="baby">
+                                    <input type="checkbox" name="baby" id="baby" value="Baby Seat" /> Baby Seat
+                                </label>
+                            </div>
+                            <div>
+                                <label for="access">
+                                    <input type="checkbox" name="access" id="access" value="Wheelchair Access" /> Wheelchair Access
+                                </label>
+                            </div>
+                            <div>
+                                <label for="stock">
+                                    <input type="checkbox" name="stock" id="stock" value="Stock Tip" /> Stock Tip
+                                </label>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <div class="form-label required">
+                            <label for="instruction">Special Instructions: </label>
+                        </div>
+
+                        <div class="form-input">
+                            <textarea name="instruction" id="instruction" cols="3" rows="4"
+                                      placeholder="special instructions" pattern="[A-Za-z]{3, 300}" required></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="action-button">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit Booking">
+            </div>
+
+        </form>
+
     </article>
 </section>
 
-<div  style="text-align: center">
-    <span>welcome home</span>
-    <p>wlcomr</p>
-</div>
 
+<!--<script src="JQuery.3.4.1.js" type="text/javascript"></script>-->
 
 
 </body>
