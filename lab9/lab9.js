@@ -12,7 +12,10 @@ $(function() {
         let name = $("#name").val();
         let street = $("#street").val();
         let seat = $("#seat").val();
+        let radio = $('input[type=radio]').is(':checked');
+        let checkbox = $('input[type=checkbox]').is(':checked');
 
+        let checkbox2 = $('input[type=checkbox]').val();
 
         if(name == '') {
             submitFlag = false;
@@ -28,9 +31,30 @@ $(function() {
             )
         }
 
+        if(!radio) {
+            submitFlag = false;
+            error.append(
+                $("<p>", { text: "Select a Taxi for you to be able to book a ticket!", style: "color:red"})
+            )
+        }
+        if(!checkbox) {
+            submitFlag = false;
+            error.append(
+                $("<p>", { text: "Select Extra for you to be able to book a ticket!", style: "color:red"})
+            )
+        }
+
+
         if(submitFlag) {
             this.submit();
         }
 
     })
 });
+
+
+$(function () {
+
+
+
+})
